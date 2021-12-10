@@ -87,7 +87,11 @@
 //       }
 //   }
 //
-
+//ext {
+//    ndkVersion = ndkVersion
+//    ndkVersion "23.1.7779620"
+//
+//}
 buildscript {
     repositories {
 
@@ -118,8 +122,7 @@ println "OpenCV: " + project.buildscript.sourceFile
 android {
     compileSdkVersion 31
     // not needed since com.android.tools.build:gradle:3.0.0
-
-
+    ndkVersion  "20.0.5594570"
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 31
