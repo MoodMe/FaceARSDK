@@ -3,24 +3,16 @@ manifest
 ADDED from /Users/abdelhalimmahmoud/Documents/GitHub/FaceARSDK/java/AndroidManifest.xml:2:1-7:12
 INJECTED from /Users/abdelhalimmahmoud/Documents/GitHub/FaceARSDK/java/AndroidManifest.xml:2:1-7:12
 INJECTED from /Users/abdelhalimmahmoud/Documents/GitHub/FaceARSDK/java/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/abdelhalimmahmoud/Documents/GitHub/FaceARSDK/java/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/abdelhalimmahmoud/Documents/GitHub/FaceARSDK/java/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/abdelhalimmahmoud/Documents/GitHub/FaceARSDK/java/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/abdelhalimmahmoud/Documents/GitHub/FaceARSDK/java/AndroidManifest.xml:2:1-7:12
 	package
 		ADDED from /Users/abdelhalimmahmoud/Documents/GitHub/FaceARSDK/java/AndroidManifest.xml:3:7-27
 		INJECTED from /Users/abdelhalimmahmoud/Documents/GitHub/FaceARSDK/java/AndroidManifest.xml
 		INJECTED from /Users/abdelhalimmahmoud/Documents/GitHub/FaceARSDK/java/AndroidManifest.xml
 	android:versionName
 		ADDED from /Users/abdelhalimmahmoud/Documents/GitHub/FaceARSDK/java/AndroidManifest.xml:5:7-34
-		INJECTED from /Users/abdelhalimmahmoud/Documents/GitHub/FaceARSDK/java/AndroidManifest.xml
-		INJECTED from /Users/abdelhalimmahmoud/Documents/GitHub/FaceARSDK/java/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/abdelhalimmahmoud/Documents/GitHub/FaceARSDK/java/AndroidManifest.xml:2:11-69
 	android:versionCode
 		ADDED from /Users/abdelhalimmahmoud/Documents/GitHub/FaceARSDK/java/AndroidManifest.xml:4:7-33
-		INJECTED from /Users/abdelhalimmahmoud/Documents/GitHub/FaceARSDK/java/AndroidManifest.xml
-		INJECTED from /Users/abdelhalimmahmoud/Documents/GitHub/FaceARSDK/java/AndroidManifest.xml
 uses-sdk
 INJECTED from /Users/abdelhalimmahmoud/Documents/GitHub/FaceARSDK/java/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/abdelhalimmahmoud/Documents/GitHub/FaceARSDK/java/AndroidManifest.xml
