@@ -106,7 +106,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.4'
+        classpath 'com.android.tools.build:gradle:3.6.1'
     }
 }
 
@@ -178,7 +178,6 @@ android {
             manifest.srcFile 'java/AndroidManifest.xml'
         }
     }
-    buildToolsVersion '28.0.3'
 }
 
 dependencies {
