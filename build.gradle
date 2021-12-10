@@ -90,26 +90,28 @@
 
 buildscript {
     repositories {
-        maven {
-            url 'https://maven.google.com/'
-            name 'Google'
-        }
-        jcenter()
-        maven {
-            url 'https://mvnrepository.com/artifact/com.android.tools.lint/lint-gradle-api'
-        }
-//        google()
-//        jcenter()
+
+        google()
         mavenCentral()
+        maven {
+            url "https://jitpack.io"
+            credentials { username authToken }
+        }
+
 
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.3'
+        classpath 'com.android.tools.build:gradle:3.6.4'
     }
 }
 
 apply plugin: 'com.android.library'
+apply plugin:  'maven-publish'
+
+
+group 'io.github.MoodMe'
+version '1-SNAPSHOT'
 
 println "OpenCV: " + project.buildscript.sourceFile
 
@@ -120,8 +122,28 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 31
-    }
+        versionCode 1
+        versionName "1.0"
+        consumerProguardFiles "consumer-rules.pro"
 
+    }
+    afterEvaluate {
+        publishing {
+            publications {
+                // Creates a Maven publication called "release".
+                release(MavenPublication) {
+                    // Applies the component for the release build variant.
+                    from components.release
+
+                    // You can then customize attributes of the publication as shown below.
+                    groupId = 'io.github.MoodMe'
+                    artifactId = '1'
+                    version = '1.0.0'
+                }
+
+            }
+        }
+    }
     buildTypes {
         release {
             minifyEnabled true
@@ -132,7 +154,17 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-
+    allprojects {
+        repositories {
+            // The order in which you list these repositories matter.
+            google()
+            mavenCentral()
+            maven {
+                url "https://jitpack.io"
+                credentials { username authToken }
+            }
+        }
+    }
     sourceSets {
         main {
             jniLibs.srcDirs = ['native/libs']
@@ -145,4 +177,5 @@ android {
 }
 
 dependencies {
+    implementation fileTree(dir: "libs", include: ["*.aar"])
 }
