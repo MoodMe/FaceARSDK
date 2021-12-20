@@ -28,7 +28,8 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
   s.vendored_frameworks = 'FaceARSDK/Frameworks/MDMFaceTracker.framework'
-  
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   # s.resource_bundles = {
   #   'MyTestLib' => ['MyTestLib/Assets/*.png']
   # }
