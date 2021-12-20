@@ -17,8 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = "FACE INSIGHTS
-AI for customer experience, emotional journeys & demographics analytics"
+  s.description      = "FACE INSIGHTS AI for customer experience, emotional journeys & demographics analytics"
 
   s.homepage         = 'https://github.com/MoodMe/FaceARSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
