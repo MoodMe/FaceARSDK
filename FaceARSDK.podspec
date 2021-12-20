@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-  s.vendored_frameworks = 'FaceARSDK/MDMFaceTracker.framework'
+  s.vendored_frameworks = 'FaceARSDK/Frameworks/MDMFaceTracker.framework'
   
   # s.resource_bundles = {
   #   'MyTestLib' => ['MyTestLib/Assets/*.png']
